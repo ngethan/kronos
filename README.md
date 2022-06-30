@@ -12,7 +12,7 @@
 <li><code>GUILD_ID</code> (your test guild id. slash commands will be instantly registered in this guild)</li>
 <li><code>SUCCESS_COLOR</code> (the success color of embeds -- don't include the hashtag)</li>
 <li><code>ERROR_COLOR</code> (pretty self explanatory)</li>
-<li><code>MONGO_URI</code> (the <a href="https://mongodb.com">MongoDB</a> connection string</li>
+<li><code>MONGO_URI</code> (the <a href="https://mongodb.com">MongoDB</a> connection string)</li>
 <li><code>DEPLOYMENT</code> (this should be false -- I'll explain this later)</li>
 </ul>
 <h1>What's up with the deployment environment variable?</h1>
