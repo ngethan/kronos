@@ -23,8 +23,7 @@
     },
     "homepage": "https://github.com/intuitiveen/kronos#readme",
     "engines": {
-        "node": "16.15.0",
-        "yarn": "1.22.18"
+        "node": ">=16.9.0"
     },
     "dependencies": {
         "@discordjs/rest": "^0.4.1",
