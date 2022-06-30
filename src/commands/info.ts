@@ -27,7 +27,7 @@ export const info: CommandInt = {
                 .addFields([
                     {
                         name: "Developers",
-                        value: `[ethan.#0001](https://ethanng.dev)\nViillager#0001`,
+                        value: `[ethan.#0001](https://ethanng.dev)`,
                         inline: true,
                     },
                     { name: "Version", value: "0.0.1", inline: true },
