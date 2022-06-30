@@ -1,0 +1,53 @@
+{
+    "name": "kronos",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dist/index.js",
+    "scripts": {
+        "prebuild": "rm -rf ./dist",
+        "build": "tsc",
+        "lint": "eslint ./src",
+        "start": "node -r dotenv/config ./dist/index.js",
+        "deploy": "git add . && git commit -m quick deploy && git push heroku main",
+        "dev": "rd /s /q dist && tsc && yarn start",
+        "heroku": "yarn run build && node ./dist/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/intuitiveen/kronos.git"
+    },
+    "author": "ethan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/intuitiveen/kronos/issues"
+    },
+    "homepage": "https://github.com/intuitiveen/kronos#readme",
+    "engines": {
+        "node": "16.15.0",
+        "yarn": "1.22.18"
+    },
+    "dependencies": {
+        "@discordjs/rest": "^0.4.1",
+        "@types/cron": "^1.7.3",
+        "@types/luxon": "^2.3.2",
+        "chalk": "^5.0.1",
+        "cron": "^2.0.0",
+        "discord-api-types": "^0.32.1",
+        "discord.js": "^14.0.0-dev.1652573522-7ce641d",
+        "dotenv": "^16.0.0",
+        "luxon": "^2.4.0",
+        "mongoose": "^6.3.2",
+        "ms-typescript": "^2.0.0",
+        "typescript": "^4.6.4",
+        "winston": "^3.7.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.31",
+        "@typescript-eslint/eslint-plugin": "^5.22.0",
+        "@typescript-eslint/parser": "^5.22.0",
+        "eslint": "^8.15.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.6.2"
+    }
+}
