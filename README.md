@@ -13,7 +13,7 @@
 <li><code>SUCCESS_COLOR</code> (the success color of embeds -- don't include the hashtag)</li>
 <li><code>ERROR_COLOR</code> (pretty self explanatory)</li>
 <li><code>MONGO_URI</code> (the <a href="https://mongodb.com">MongoDB</a> connection string)</li>
-<li><code>DEPLOYMENT</code> (this should be false -- I'll explain this later)</li>
+<li><code>DEPLOYMENT</code> (this should be false on your development environment and true in your deployment environment -- I'll explain this later)</li>
 </ul>
 <h1>What's up with the deployment environment variable?</h1>
 <p>Given that I'm using TypeScript for this discord bot, you will need to compile it into JavaScript using the tsc command (installing the typescript npm package globally gives you this command). I prefer to compile the code into a folder named dist and run dist/index.js as the main file. This means that we must delete the dist folder and recompile everytime we run the bot. The command to do this will vary per operating system. If you're using windows, you can keep the package.json file as is. If not, you will have to replace dev with the <code>(command to delete dist) && yarn start</code>.</p>
